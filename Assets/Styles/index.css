@@ -9,6 +9,10 @@ body {
     background-color: #3f1457;
 }
 
+body::-webkit-scrollbar{
+    width: 1px;
+}
+
 .container {
     width: 94%;
     margin: 10px auto;
@@ -106,11 +110,11 @@ body {
     font-size: 20px;
 }
 
-.section-categorias {
-    margin-top: 6rem;
+.section {
+    margin-top: 3rem;
 }
 
-.section-categorias h2 {
+.section h2 {
     color: white;
 }
 
@@ -182,7 +186,7 @@ body {
 }
 
 .formulario .registro {
-    width: 60%;
+    width: 100%;
 }
 
 .formulario .registro .form-group {
