@@ -17,12 +17,23 @@
             <nav class="menu">
                 <ul>
                     <li>
-                        <a href="login.html">
-                            <i class="fa fa-circle-user"></i>Salir
-                        </a>
+                        <button class="menu-login">
+                            <i class="fas fa-user-circle "></i>
+                            <i class="fas fa-caret-down "></i>
+                        </button>
                     </li>
                 </ul>
             </nav>
+        </div>
+        <div class="menu-logout inactive">
+            <ul>
+                <li>
+                    <a href="">
+                        <i class="fa fa-sign-out-alt"></i>
+                        Salir
+                    </a>
+                </li>
+            </ul>
         </div>
     </header>
 
@@ -38,34 +49,60 @@
 
     <section class="section">
         <div class="informacion">
-            <p>Información</p>
-            <div class="detalle">
-                <i class="fa fa-user-circle"></i>
-                <h4>Propietario:</h4><span>Pepito Perez</span>
+            <div class="item">
+                <p class="titulo-burbuja">Información</p>
+                <div class="detalle">
+                    <i class="fa fa-user-circle"></i>
+                    <h4>Propietario:</h4><span>Pepito Perez</span>
+                </div>
+                <div class="detalle">
+                    <i class="fa fa-envelope"></i>
+                    <h4>Correo:</h4><span>Moda</span>
+                </div>
+                <div class="detalle">
+                    <i class="fa fa-map-marker-alt"></i>
+                    <h4>Ubicación:</h4><span>Corozal</span>
+                </div>
+                <div class="detalle">
+                    <i class="fa fa-list"></i>
+                    <h4>Categorias:</h4><span>Moda</span>
+                </div>
+                <div class="detalle">
+                    <i class="fa fa-id-card"></i>
+                    <h4>NIT:</h4><span>15479839</span>
+                </div>
+                <div class="detalle">
+                    <i class="fa fa-phone-alt"></i>
+                    <h4>Telefono:</h4><span>3126548764</span>
+                </div>
             </div>
-            <div class="detalle">
-                <i class="fa fa-envelope"></i>
-                <h4>Correo:</h4><span>Moda</span>
-            </div>
-            <div class="detalle">
-                <i class="fa fa-map-marker-alt"></i>
-                <h4>Ubicación:</h4><span>Corozal</span>
-            </div>
-            <div class="detalle">
-                <i class="fa fa-list"></i>
-                <h4>Categorias:</h4><span>Moda</span>
-            </div>
-            <div class="detalle">
-                <i class="fa fa-id-card"></i>
-                <h4>NIT:</h4><span>15479839</span>
-            </div>
-            <div class="detalle">
-                <i class="fa fa-phone-alt"></i>
-                <h4>Telefono:</h4><span>3126548764</span>
+            <div class="calificacion">
+                <p class="titulo-burbuja">Calificación</p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    5.0
+                </div>
             </div>
         </div>
     </section>
-    <div style="height: 100vh;"></div>
+    <section class="section">
+        <div class="fotos">
+            <div class="titulo">
+                <p>fotos</p>
+            </div>
+            <div class="list-fotos">
+                <img src="Assets/img/peluqueria.jpeg" alt="">
+                <img src="Assets/img/peluqueria.jpeg" alt="">
+                <img src="Assets/img/peluqueria.jpeg" alt="">
+                <img src="Assets/img/peluqueria.jpeg" alt="">
+                <img src="Assets/img/peluqueria.jpeg" alt="">
+                <img src="Assets/img/peluqueria.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+    <script src="Assets/js/main.js"></script>
 </body>
 
 </html>

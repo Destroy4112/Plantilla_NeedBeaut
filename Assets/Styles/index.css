@@ -5,8 +5,14 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+:root{
+    --main-color: #3f1457;
+    --secundary-color: #ba9dc0;
+}
+
 body {
-    background-color: #3f1457;
+    height: 100vh;
+    background-color: var(--main-color);
 }
 
 body::-webkit-scrollbar{
@@ -15,7 +21,7 @@ body::-webkit-scrollbar{
 
 .container {
     width: 94%;
-    margin: 10px auto;
+    margin: auto;
 }
 
 .header-principal .container {
@@ -236,7 +242,7 @@ select {
 }
 
 .formulario form .btn-login {
-    background-color: #ba9dc0;
+    background-color: var(--secundary-color);
     padding: 10px;
     border: none;
     border-radius: 25px;
@@ -260,7 +266,7 @@ select {
 
 .formulario .item a:hover {
     color: #ba9dc0;
-    border-bottom: 1px solid #ba9dc0;
+    border-bottom: 1px solid var(--secundary-color);
 }
 
 .formulario .item a h3 {

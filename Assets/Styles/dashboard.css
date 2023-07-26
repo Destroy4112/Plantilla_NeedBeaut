@@ -34,11 +34,60 @@ body {
     list-style: none;
 }
 
-.container ul li a {
+.container ul li i {
     color: white;
     text-decoration: none;
     font-size: 1.5rem;
     justify-content: space-between;
+    cursor: pointer;
+}
+
+.menu-login {
+    border: none;
+    background: transparent;
+}
+
+.inactive {
+    display: none;
+    transition: 1s;
+}
+
+.menu-logout {
+    position: absolute;
+    left: inherit;
+    right: 0px;
+    float: none;
+    max-width: 200px;
+    min-width: 180px;
+    padding: 0;
+    background-color: #ba9dc0;
+
+}
+
+.menu-logout ul {
+    list-style: none;
+    padding: 10px;
+}
+
+.menu-logout ul li a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.menu-logout ul li a i {
+    margin-right: 0.5rem;
 }
 
 .section {
@@ -87,6 +136,8 @@ body {
 }
 
 .informacion {
+    display: flex;
+    justify-content: space-between;
     background-color: #0e101170;
     color: white;
     border-radius: 20px;
@@ -95,6 +146,23 @@ body {
     padding: 20px 40px;
 }
 
+.titulo-burbuja {
+    width: 50%;
+    padding: 6px;
+    background-color: #ba9dc0;
+    border-radius: 25px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.informacion .calificacion {
+    width: 30%;
+}
+
+.stars {
+    font-size: 1.5em;
+}
 
 .detalle {
     display: flex;
@@ -106,7 +174,43 @@ body {
     margin-right: 10px;
 }
 
-.detalle i{
+.detalle i {
     margin-top: 3px;
     margin-right: 20px;
+}
+
+.fotos {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #0e101170;
+    color: white;
+    border-radius: 20px;
+    width: 80%;
+    padding: 20px 40px;
+}
+
+.fotos .titulo {
+    width: 7%;
+    padding: 6px;
+    background-color: #ba9dc0;
+    border-radius: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.fotos .list-fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.fotos img {
+    width: 150px;
+    height: 150px;
+    border: 5px solid white;
+    border-radius: 50%;
+    margin-bottom: 20px;
 }
