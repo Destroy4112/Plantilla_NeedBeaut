@@ -6,29 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="Assets/img/logo.png" type="image/x-icon">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="Assets/Styles/dashboard.css">
+    <link rel="stylesheet" href="Assets/Styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 </head>
 
 <body>
     <header class="header">
         <div class="container">
-            <h2><img src="Assets/img/logo.png" alt=""></h2>
-            <nav class="menu">
-                <ul>
-                    <li>
-                        <button class="menu-login">
-                            <i class="fas fa-user-circle "></i>
-                            <i class="fas fa-caret-down "></i>
-                        </button>
-                    </li>
-                </ul>
-            </nav>
+            <div class="row">
+                <h2><img src="Assets/img/logo.png" class="logo-dashboard" alt="Logo"></h2>
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <button class="menu-login">
+                                <i class="fas fa-user-circle "></i>
+                                <i class="fas fa-caret-down "></i>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
         <div class="menu-logout inactive">
             <ul>
                 <li>
-                    <a href="">
+                    <a href="login.html">
                         <i class="fa fa-sign-out-alt"></i>
                         Salir
                     </a>
@@ -37,19 +39,21 @@
         </div>
     </header>
 
-    <section class="section">
-        <div class="portada">
-            <img src="Assets/img/portada.jpg" alt="portada">
-        </div>
-        <div class="perfil">
-            <img src="Assets/img/perfil.png" alt="perfil">
-            <h2>Empresa NeedBeaut Empresa NeedBeaut Empresa NeedBeaut</h2>
+    <section>
+        <div class="contenedor-column">
+            <div class="portada">
+                <img src="Assets/img/portada.jpg" alt="portada">
+            </div>
+            <div class="perfil">
+                <img src="Assets/img/perfil.png" alt="perfil">
+                <h2 class="nombre-perfil">Empresa NeedBeaut Empresa NeedBeaut Empresa NeedBeaut</h2>
+            </div>
         </div>
     </section>
 
-    <section class="section">
-        <div class="informacion">
-            <div class="item">
+    <section class="contenedor-info">
+        <div class="contenedor-row">
+            <div class="datos-negocio">
                 <p class="titulo-burbuja">Información</p>
                 <div class="detalle">
                     <i class="fa fa-user-circle"></i>
@@ -87,14 +91,12 @@
             </div>
         </div>
     </section>
-    <section class="section">
-        <div class="fotos">
-            <div class="titulo">
+    <section class="contenedor-info">
+        <div class="contenedor-column foto-list">
+            <div class="titulo-fotos">
                 <p>fotos</p>
             </div>
             <div class="list-fotos">
-                <img src="Assets/img/peluqueria.jpeg" alt="">
-                <img src="Assets/img/peluqueria.jpeg" alt="">
                 <img src="Assets/img/peluqueria.jpeg" alt="">
                 <img src="Assets/img/peluqueria.jpeg" alt="">
                 <img src="Assets/img/peluqueria.jpeg" alt="">

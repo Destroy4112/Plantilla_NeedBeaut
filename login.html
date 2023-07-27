@@ -6,40 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="Assets/img/logo.png" type="image/x-icon">
     <title>Login</title>
-    <link rel="stylesheet" href="Assets/Styles/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Assets/Styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 </head>
 
-<body> 
-    <header class="header-principal">
+<body>
+    <header>
         <div class="container">
             <div class="home">
                 <a href="index.html">
-                    <i class="fa-solid fa-rotate-left"></i> Inicio
+                    <i class="fas fa-undo"></i>Inicio
                 </a>
             </div>
         </div>
     </header>
-    <section class="container">
-        <div class="formulario">
-            <img src="Assets/img/logo.png" alt="">
-            <form action="dashboard.html">
-                <label for="usuario">Usuario</label>
-                <input type="text" id="usuario" placeholder="Ingrese su usuario">
+    <section class="section">
+        <div class="container">
+            <div class="formulario">
+                <img src="Assets/img/logo.png" class="logo-registro" alt="Logo">
+                <form action="dashboard.html" class="form">
+                    <label for="usuario">Usuario</label>
+                    <input type="text" id="usuario" class="input" placeholder="Ingrese su usuario">
 
-                <label for="clave">Clave</label>
-                <input type="text" id="clave" placeholder="Ingrese su clave">
+                    <label for="clave">Clave</label>
+                    <input type="text" id="clave" class="input" placeholder="Ingrese su clave">
 
-                <button class="btn-login">ingresar</button>
-            </form>
-            <div class="item">
-                <a href="#">
-                    <h3>¿Olvidaste tu contraseña?</h3>
-                </a>
-
-                <a href="registro.html">
-                    <h3>Registrate</h3>
-                </a>
+                    <button class="btn-login">ingresar</button>
+                </form>
+                <div class="item">
+                    <a href="#">
+                        <h3>¿Olvidaste tu contraseña?</h3>
+                    </a>
+                    <a href="registro.html">
+                        <h3>Registrate</h3>
+                    </a>
+                </div>
             </div>
         </div>
     </section>

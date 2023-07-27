@@ -6,19 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="Assets/img/logo.png" type="image/x-icon">
     <title>Inicio</title>
-    <link rel="stylesheet" href="Assets/Styles/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Assets/Styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 </head>
 
 <body>
-    <header class="header-principal">
+    <header>
         <div class="container">
-            <h2><img src="Assets/img/logo.png" alt=""></h2>
-            <nav class="menu">
-                <ul>
-                    <li><a href="login.html"> <i class="fa-regular fa-circle-user"></i> Login</a></li>
-                </ul>
-            </nav>
+            <div class="row">
+                <h2><img src="Assets/img/logo.png" class="logo-header" alt="Logo"></h2>
+                <nav class="menu">
+                    <ul>
+                        <li class="item-login">
+                            <a href="login.html"> <i class="fas fa-user-circle"></i> Login</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <section class="section">
@@ -27,37 +31,34 @@
                 <p class="titulo">¡Bienvenido!</p>
                 <p class="descripcion">lo que necesites puedes buscarlo aqui, estamos para ayudarte.</p>
                 <p class="titulo-2">seim</p>
-                <input type="text" class="busqueda" placeholder="¿Que estas buscando?">
+                <div class="buscador">
+                    <input type="text" class="busqueda" placeholder="¿Que estas buscando?">
+                    <button class="searcher"><i class="fas fa-search"></i></button>
+                </div>
             </div>
         </div>
     </section>
     <section class="section">
-        <div class="categorias">
-            <div class="container">
-                <h2>Categorias disponibles</h2>
-            </div>
-            <div class="list-categias">
-                <ul>
-                    <li>
-                        <div class="imagen">
-                            <img src="Assets/img/moda.jpeg" alt="">
-                        </div>
-                        <h2 class="datalle-categoria">Moda</h2>
-                    </li>
-                    <li>
-                        <div class="imagen">
-                            <img src="Assets/img/belleza.jpeg" alt="">
-                        </div>
-                        <h2 class="datalle-categoria">Belleza</h2>
-                    </li>                    
-                </ul>
-            </div>
+        <div class="container">
+            <h2 class="title-categoria">Categorias disponibles</h2>
+        </div>
+        <div class="list-categias">
+            <ul>
+                <li>
+                    <img src="Assets/img/moda.jpeg" class="imagen-categoria" alt="">
+                    <h2 class="datalle-categoria">Moda</h2>
+                </li>
+                <li>
+                    <img src="Assets/img/belleza.jpeg" class="imagen-categoria" alt="Imagen">
+                    <h2 class="datalle-categoria">Belleza</h2>
+                </li>
+            </ul>
         </div>
     </section>
     <section>
         <div style="height: 100px;"></div>
     </section>
-    
+
 </body>
 
 </html>

@@ -6,96 +6,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="Assets/img/logo.png" type="image/x-icon">
     <title>Registro</title>
-    <link rel="stylesheet" href="Assets/Styles/index.css">
+    <link rel="stylesheet" href="Assets/Styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-    <header class="header-principal">
+    <header>
         <div class="container">
             <div class="home">
                 <a href="index.html">
-                    <i class="fa-solid fa-rotate-left"></i> Inicio
+                    <i class="fas fa-undo"></i>Inicio
                 </a>
             </div>
         </div>
     </header>
-    <section class="container">
-        <div class="formulario">
-            <img src="Assets/img/logo.png" class="logo-registro" alt="">
-            <span>Registra tu empresa aqui</span>
-            <form action="dashboard.html" class="registro">
-                <div class="form-group">
-                    <div class="input-only">
-                        <label for="usuario">Nombre del propietario</label>
-                        <input type="text" id="usuario" placeholder="Ingrese el nombre del propietario...">
+    <section class="section">
+        <div class="container">
+            <div class="formulario">
+                <img src="Assets/img/logo.png" class="logo-registro" alt="">
+                <span class="title-registro">Registra tu empresa aqui</span>
+                <form action="dashboard.html" class="registro">
+                    <div class="form-group">
+                        <div class="input-only">
+                            <label for="usuario">Nombre del propietario</label>
+                            <input type="text" id="usuario" class="input" placeholder="Ingrese el nombre del propietario...">
+                        </div>
+                        <div class="input-group">
+                            <label for="cedula">Cedula</label>
+                            <input type="text" id="cedula" class="input" placeholder="Ingrese su cedula...">
+                        </div>
                     </div>
-                    <div class="input-group">
-                        <label for="cedula">Cedula</label>
-                        <input type="text" id="cedula" placeholder="Ingrese su cedula...">
+                    <div class="form-group">
+                        <div class="input-only">
+                            <label for="correo">Correo electronico</label>
+                            <input type="text" id="correo" class="input" placeholder="Ingrese su correo electronico...">
+                        </div>
+                        <div class="input-only">
+                            <label for="clave">Contraseña</label>
+                            <input type="text" id="clave" class="input" placeholder="Ingrese su clave">
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <div class="input-only">
-                        <label for="correo">Correo electronico</label>
-                        <input type="text" id="correo" placeholder="Ingrese su correo electronico...">
+                    <div class="form-group">
+                        <div class="input-only">
+                            <label for="negocio">Nombre del negocio</label>
+                            <input type="text" id="negocio" class="input" placeholder="Ingrese el nombre de su negocio...">
+                        </div>
+                        <div class="input-group">
+                            <label for="categoria">Categoria</label>
+                            <select type="text" id="categoria">
+                                <option value="">Escoja una opcion...</option>
+                                <option value="">Moda</option>
+                                <option value="">Belleza</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="input-only">
-                        <label for="clave">Contraseña</label>
-                        <input type="text" id="clave" placeholder="Ingrese su clave">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <label for="ubicacion">Numero de registro</label>
+                            <input type="text" id="ubicacion" class="input" placeholder="Ingrese la ubicación...">
+                        </div>
+                        <div class="input-group">
+                            <label for="registro">Ubicación</label>
+                            <input type="text" id="registro" class="input" placeholder="Ingrese el numero de registro...">
+                        </div>
+                        <div class="input-group">
+                            <label for="telefono">Telefono</label>
+                            <input type="text" id="telefono" class="input" placeholder="Ingrese el telefono...">
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <div class="input-only">
-                        <label for="negocio">Nombre del negocio</label>
-                        <input type="text" id="negocio" placeholder="Ingrese el nombre de su negocio...">
+                    <div class="form-group">
+                        <div class="input-only">
+                            <label for="perfil">Imagen de perfil</label>
+                            <input type="file" class="input" id="perfil">
+                        </div>
+                        <div class="input-only">
+                            <label for="portada">Imagen de portada</label>
+                            <input type="file" class="input" id="portada">
+                        </div>
                     </div>
-                    <div class="input-group">
-                        <label for="categoria">Categoria</label>
-                        <select type="text" id="categoria">
-                            <option value="">Moda</option>
-                            <option value="">Belleza</option>
-                        </select>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <label for="comercio">¿Esta registrado en camara de comercio?</label>
+                            <select type="text" id="comercio">
+                                <option value="">Si</option>
+                                <option value="">No</option>
+                            </select>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <div class="input-group">
-                        <label for="ubicacion">Numero de registro</label>
-                        <input type="text" id="ubicacion" placeholder="Ingrese la ubicación...">
-                    </div>
-                    <div class="input-group">
-                        <label for="registro">Ubicación</label>
-                        <input type="text" id="registro" placeholder="Ingrese el numero de registro...">
-                    </div>
-                    <div class="input-group">
-                        <label for="telefono">Telefono</label>
-                        <input type="text" id="telefono" placeholder="Ingrese el telefono...">
-                    </div>
-                </div>
-                <div class="form-group">
-
-                </div>
-                <div class="form-group">
-                    <div class="input-only">
-                        <label for="perfil">Imagen de perfil</label>
-                        <input type="file" class="input-image" id="perfil">
-                    </div>
-                    <div class="input-only">
-                        <label for="portada">Imagen de portada</label>
-                        <input type="file" class="input-image" id="portada">
-                    </div>
-                </div>
-                <div class="input-group">
-                    <div class="input-only">
-                        <label for="comercio">¿Esta registrado en camara de comercio?</label>
-                        <select type="text" id="comercio">
-                            <option value="">Si</option>
-                            <option value="">No</option>
-                        </select>
-                    </div>
-                </div>
-                <button class="btn-login">registrarse</button>
-            </form>
+                    <button class="btn-login">registrarse</button>
+                </form>
+            </div>
         </div>
     </section>
 </body>
